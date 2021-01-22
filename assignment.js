@@ -13,6 +13,8 @@ function kilometerToMeter(kilometer) {
     else return "Oh Dear, distance can't be negative";
 }
 
+/* If Negative  value is passed it will show an error for kilometerToMeter function*/
+
 
 
 //  2nd Problem, Total budget calculation for buying Electronics budget
@@ -34,8 +36,14 @@ function budgetCalculator(numberOfWatch, numberOfPhone, numberOfLaptop) {
 
 }
 
+/* Please put number of watch , phone & laptop accordingly or serially to get correct budget calculation */
+
+
+
+
 
 // 3rd problem , Hotel Cost calculation
+
 
 function hotelCost(days) {
     if (days <= 10 && days > 0) {
@@ -61,14 +69,22 @@ function hotelCost(days) {
 
 
 function megaFriend(names) {
-    let friendsName = ['a'];
+    let friendsName = '';
     for (i = 0; i < names.length; i++) {
+
         let namesArrayElement = names[i];
         if (namesArrayElement.length > friendsName.length) {
             friendsName = namesArrayElement;
 
         }
+        if (names == 0 || names == [''] || names < 0) {
+            return "Please put your Friends names correctly";
+        }
+
     }
     return friendsName;
+
 }
+
+/* if 0 is passed like a string it will show an error for function megaFriend*/
 
