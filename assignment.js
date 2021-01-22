@@ -61,7 +61,7 @@ function hotelCost(days) {
         costOfSecond10Days = 800;
         return costOfStayingMoreThan20Days + costOfSecond10Days + costOfFirst10Days;
     }
-    else return "You'r dreaming, wake up";
+    else return "You're dreaming, wake up";
 }
 
 
